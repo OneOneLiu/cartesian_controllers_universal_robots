@@ -20,9 +20,9 @@
         <remap from="my_cartesian_compliance_controller/ft_sensor_wrench" to="wrench" />
 
         <!-- The robot -->
-        <arg name="controller_config_file" default="$(find ur_robot_driver)/config/ur10e_controllers.yaml"/>
+        <arg name="controller_config_file" default="$(find ur_robot_driver)/config/ur5_controllers.yaml"/>
         <arg name="robot_description_file" default="$(find cartesian_controllers_ur_robots)/launch/kinematics.xml"/>
-        <arg name="kinematics_config" default="$(find cartesian_controllers_ur_robots)/cfg/test_calibration.yaml"/>
+        <arg name="kinematics_config" default="$(find ur5_robot)/config/my_robot_calibration.yaml" doc="Kinematics config file used for calibration correction. This will be used to verify the robot's calibration is matching the robot_description."/>
         <arg name="tf_prefix" default="" />
         <arg name="controllers" default="joint_state_controller force_torque_sensor_controller robot_status_controller my_cartesian_compliance_controller"/>
         <arg name="headless_mode" default="False"/>

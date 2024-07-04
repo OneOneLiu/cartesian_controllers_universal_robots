@@ -2,11 +2,11 @@
 <robot name="robot" xmlns:xacro="http://ros.org/wiki/xacro">
 
         <!-- Includes -->
-        <xacro:include filename="$(find ur_description)/urdf/inc/ur10e_macro.xacro" />
+        <xacro:include filename="$(find ur_description)/urdf/inc/ur5_macro.xacro" />
 
         <!-- Create robot instances -->
         <xacro:arg name="kinematics_config" default=""/>
-        <xacro:ur10e_robot prefix="" />
+        <xacro:ur5_robot prefix="" />
 
         <!-- Connect robot to world -->
         <link name="world" />
