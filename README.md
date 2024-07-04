@@ -25,6 +25,16 @@ According to [Issues#47](https://github.com/fzi-forschungszentrum-informatik/car
 
 According to [Issues#47](https://github.com/fzi-forschungszentrum-informatik/cartesian_controllers/issues/47) [Issues#91](https://github.com/fzi-forschungszentrum-informatik/cartesian_controllers/pull/91) and [Issues#100](https://github.com/fzi-forschungszentrum-informatik/cartesian_controllers/issues/100), this shaking may be caused by wrong gravity compensation.
 
+## Current behavior
+
+force controller does not work, and there are oscillations when use compliant controller.
+
+<video controls src="medias/oscillation.mp4" title="oscillations"></video>
+
+I have removed the 2f-85 gripper but the issue remains.
+
+The oscillations escalate if turn up the speed.
+
 ## ToDos
 
 > References
