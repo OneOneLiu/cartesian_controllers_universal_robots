@@ -35,6 +35,13 @@ I have removed the 2f-85 gripper but the issue remains.
 
 The oscillations escalate if turn up the speed.
 
+## Current behavior
+force controller works if the variable `error_scale` is non-zero. But still with oscillations just like compliance controller. 
+
+And the robot gradually moves upward when there is no force applied to the topic `target_wrench`.
+
+Now I guess both issues is caused by wrong end_effector mass and COM. Will fine-tune it later
+
 ## ToDos
 
 > References
