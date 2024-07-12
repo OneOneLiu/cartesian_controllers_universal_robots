@@ -15,9 +15,9 @@
 
         <!-- Control wrenches via one topic -->
         <remap from="my_cartesian_force_controller/target_wrench" to="target_wrench" />
-        <remap from="my_cartesian_force_controller/ft_sensor_wrench" to="wrench" />
+        <remap from="my_cartesian_force_controller/ft_sensor_wrench" to="filtered_wrench" />
         <remap from="my_cartesian_compliance_controller/target_wrench" to="target_wrench" />
-        <remap from="my_cartesian_compliance_controller/ft_sensor_wrench" to="wrench" />
+        <remap from="my_cartesian_compliance_controller/ft_sensor_wrench" to="filtered_wrench" />
 
         <!-- The robot -->
         <arg name="controller_config_file" default="$(find ur_robot_driver)/config/ur5_controllers.yaml"/>
